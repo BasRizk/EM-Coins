@@ -4,6 +4,8 @@ Implementation of Expectation Maxmization Algorithm (Framework) on example of co
 https://ra-training.s3-us-west-1.amazonaws.com/DoBatzoglou_2008_EMAlgo.pdf
 
 
+##To Run the API(Using GMM): python main.py ##
+
 The API implementation in Flask is simple. Loading the dataset has been implemented using ThreadPoolExecutor to execute as many requests as possible simultaneously to load the dataset (30 coin draws) quickly enough so that there won’t be much delay for the API request to make the estimation.
 
 The EM algorithm is an approach of estimating the unknown parameters behind an observed distribution of data iteratively, in other words it is used in learning the statistical model (latent variables) behind probabilistic distributions such as the means and standard deviations of an observed distribution. Gaussian Mixture Model (GMM) is one probabilistic model which can be developed, meaning its parameters including its components' means can be estimated, using EM algorithm.
